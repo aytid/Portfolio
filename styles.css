@@ -379,13 +379,36 @@ body {
     .p1 p{
         font-size: 20px;
     }
-    .skills-container {
-        display: flex;
-        animation: slideLeft 3s linear infinite;
-        
-    }
     .section{
         width: 90%;
+    }
+
+    #skills {
+        overflow: hidden;
+    }
+    
+    .skills-container {
+        display: flex;
+        animation: slideLeft 6s linear infinite;
+        
+    }
+    
+    
+    #skills img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        margin: 10px;
+    }
+    
+    
+    @keyframes slideLeft {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-290%);
+        }
     }
     }
   
