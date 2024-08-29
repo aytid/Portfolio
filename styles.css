@@ -72,6 +72,10 @@ body {
     border-radius: 0px 35px 35px 0;
 }
 
+ h5{
+    color:rgb(81, 215, 233);
+}
+
 #skills {
     overflow: hidden;
 }
@@ -358,6 +362,7 @@ body {
         height: max-content;
         justify-content: space-evenly;
         gap:10px;
+        border-radius: 10px;
       }
       .profile {
         margin: 20px auto;
