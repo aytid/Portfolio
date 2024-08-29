@@ -354,7 +354,7 @@ body {
        .profile img {
         border-radius: 0%;
         object-fit:cover;
-        object-position: -350px center;
+        object-position: -150px center;
         width: 100%; 
       }
       .nav{
