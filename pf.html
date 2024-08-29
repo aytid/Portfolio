@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            background-color: #343a40;
+            scroll-behavior: smooth;
+            margin: 0;
+        }
+        .nav {
+            height: 100px;
+            width: 60%;
+            margin: auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-evenly;
+            color: white;
+        }
+        .nav a {
+            text-decoration: none; 
+            transition: ease-in-out 0.1s;
+            color: white;
+        }
+        .nav a:hover {
+            color: rgb(81, 215, 233);
+            transform: scale(1.1);
+        }
+        .profile {
+            margin: 20px auto;
+            background-color: #292c31;
+            width: 70%;
+            border-radius: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .p1 {
+            width: 40%;
+            color: white;
+        }
+        .p1 h1, .p1 p {
+            margin: auto;
+            width: 100%;
+            margin-left: 30px;
+        }
+        .p2 {
+            height: 500px;
+            width: 60%;
+            margin: 0;
+        }
+        .p2 img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 0px 35px 35px 0;
+            -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+            mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+        }
+        .scale-on-hover {
+            display: inline-block;
+            transition: transform 0.7s ease;
+            color: rgb(81, 215, 233);
+        }
+        .scale-on-hover:hover {
+            transform: rotate(360deg);
+        }
+        .scale-on-hover-again {
+            display: inline-block;
+            transition: transform 0.1s ease;
+            color: rgb(81, 215, 233);
+        }
+        .scale-on-hover-again:hover {
+            transform: scale(1.1);
+            color: red;
+        }
+        .section {
+            width: 70%;
+            margin: 20px auto;
+            color: white;
+        }
+        .card {
+            background-color: #292c31;
+            border: none;
+            height:max-content;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            color: white;
+
+        }
+        .card h5, .card p {
+            color: white;
+        }
+        a {
+            text-decoration: none; 
+            transition: transform ease-in-out 0.2s;
+            color: rgb(81, 215, 233);
+        }
+        a:hover {
+            transform: scale(1.1);
+            text-decoration: none; 
+            color: red;
+        }
+        .col-md-3 .card .card-body h5{
+            transition: transform ease-in-out 0.1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col-md-3 .card .card-body h5:hover{
+            transform: scale(1.05);
+            color: rgb(81, 215, 233) ;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Say hello!</a>
+    </div>
+    
+    <div id="home" class="profile">
+        <div class="p1">
+            <h1>Rohan <span class="scale-on-hover">A</span>ditya</h1>
+            <p>Programming is thinking, <span class="scale-on-hover-again">not</span> typing.</p>
+        </div>
+        <div class="p2">
+            <img src="meee.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="education" class="section">
+        <h1>Education</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bachelor of Technology in Computer Science and Engineering</h5>
+                        <p class="card-text">Kakatiya Institute of Technology and Science, Warangal.</p>
+                        <h5 class="card-text"><small class="text-muted">CGPA: 8.25 (out of 10)</small></h5>
+                        <h5 class="card-text"><small class="text-muted">Graduated: 2024</small></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Intermediate in MPC</h5>
+                        <p class="card-text">Sri Chaitanya College, Hydernagar Campus <br> Hyderabad.</p>
+                        <h5 class="card-text"><small class="text-muted">Result: 971 (out of 1000)</small></h5>
+                        <h5 class="card-text"><small class="text-muted">2020-2022</small></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Schooling</h5>
+                        <p class="card-text">St. Francis De.Sales High School, Korutla.</p>
+                        <h5 class="card-text"><small class="text-muted">CGPA: 9.8 (out of 10)</small></h5>
+                        <h5 class="card-text"><small class="text-muted">2006-2020</small></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="experience" class="section">
+        <h1>Experience</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Intern at Kaptius</h5>
+                        <p class="card-text">Working as Associate Developer.</p>
+                        <h5 class="card-text"><small class="text-muted">January 2024 - Current</small></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills" class="section">
+        <h1>Skills</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">C</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Java</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Python</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">CSS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">PHP</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">SQL</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">MySQL</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">ServiceNow</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="projects" class="section">
+        <h1>Projects</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">e-Buddy Web App</h5>
+                        <p class="card-text">Academic companion, providing real-time attendance tracking and dynamic SGPA estimation.</p>
+                        <p class="card-text">Streamlit framework used.</p>
+                        <p class="card-text">
+                            <a href="https://rohan-aditya-ebuddy.streamlit.app/" target="_blank">Visit now</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Stock Price Prediction</h5>
+                        <p class="card-text">Web application utilizing machine learning algorithms to forecast stock prices for selected stocks.</p>
+                        <p class="card-text">Streamlit framework used.</p>
+                        <p class="card-text">
+                            <a href="https://github.com/aytid/Stock-price-prediction" target="_blank">Project details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Full Stack Student Mark Management System</h5>
+                        <p class="card-text">Website that empowers teachers to digitize student marks, enabling seamless access to personalized progress reports for students anytime, anywhere.</p>
+                        <p class="card-text">Using HTML, CSS, JavaScript, and PHP.</p>
+                        <p class="card-text">
+                            <a href="http://zphsthakkallapally23.000webhostapp.com/index.html" target="_blank">Visit now</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Urban-Utopia</h5>
+                    <p class="card-text">An e-commerce website offering a diverse range of shopping items, designed to provide a smooth and enjoyable shopping experience.</p>
+                    <p class="card-text">Using HTML, CSS and JavaScript and Bootstrap.</p>
+                    <p class="card-text">
+                        <a href="https://aytid.github.io/Urban-Utopia/home.html" target="_blank">Visit now</a>
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">KITS Navigation</h5>
+                    <p class="card-text">Web application to facilitate seamless navigation for students between different blocks within the college campus.</p>
+                    <p class="card-text">Using HTML, CSS and JavaScript and Bootstrap.</p>
+                    <p class="card-text">
+                        <a href="https://aytid.github.io/kitsNavigation/college.html" target="_blank">Visit now</a>
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="certificates" class="section">
+        <h1>Certificates</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">ServiceNow Certified System
+                            Administrator(CSA) Certification</h5>
+                            <h4 class="card-text"><small class="text-muted">ServiceNow</small></h4>    
+                        <h5 class="card-text"><small class="text-muted">2024</small></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Solutions & Data Science for Online internship</h5>
+                            <h4 class="card-text"><small class="text-muted">3Cortex, Hyderabad</small></h4>    
+                        <h5 class="card-text"><small class="text-muted">June 2022 - July 2022</small></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact" class="section">
+        <h1>Say hello!</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Connect with me and stay updated</h5>
+                <p> <a href="https://www.linkedin.com/in/rohan-aditya-thirumala-6b8228264/" class="card-text">Linked in</a> -Let's network and connect professionally!</p>
+                <p> <a href="https://github.com/aytid" class="card-text">Github</a> -Check out my projects and contributions to the tech community.</p>
+                <p> <a class="card-text">Instagram</a> -Follow my journey and personal updates.</p>
+                <p class="card-text">
+                    <a href="mailto:adityathirumala20@gmail.com">Email</a> - Drop me a message anytime!
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
