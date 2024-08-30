@@ -5,40 +5,26 @@ body {
     margin: 0;
 }
 
-
-.nav {
-    position: sticky;
-    top: 0;
-    height: 47px;
-    width: 70%;
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #212529;
-    background-color: #292c31;
-    /* background-color: white; */
-    border-radius: 50px;
-    z-index: 1000;
+.custom-navbar .nav-link {
+    color: white;  
+    outline: none; 
+    transition: color 0.2s ease-in-out;
 }
 
-.nav a {
-    text-decoration: none;
-    transition: ease-in-out 0.1s;
-    color: white;
-    /* color: black; */
-    overflow: hidden;
+.custom-navbar .nav-link:active {
+    color: rgb(81, 215, 233); 
 }
-.nav a:hover {
-    /* background-color: black;  */
-    /* color: white; */
-    color:rgb(81, 215, 233);
-    border-radius: 50px;
+
+.custom-navbar .nav-link {
+    color: white; 
+    transition: transform 0.1s ease-in-out; 
+}
+
+.custom-navbar .nav-link:hover {
     transform: scale(1.1);
+    color: rgb(81, 215, 233); 
 }
-.nav a:active{
-    color:rgb(81, 215, 233);
-}
+
 
 .profile {
     margin: 20px auto;
@@ -320,7 +306,7 @@ body {
       width: 140px; 
     }
     .nav{
-        width: 90%;
+        width: 0%;
         height: 30px;
         justify-content: space-evenly;
         border-radius: 10px;
