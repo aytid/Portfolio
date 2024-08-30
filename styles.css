@@ -322,10 +322,10 @@ body {
        /* .profile img{
         border-radius: 0%;
        } */
-       .profile img {
-        border-radius: 0%;
+       .profile .p2 img {
+        border-radius: 5%;
         object-fit:cover;
-        object-position: -200px center;
+        object-position: -164px center;
         width: 100%; 
       }
   }
