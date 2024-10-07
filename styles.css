@@ -28,13 +28,15 @@ body {
 
 .profile {
     margin: 20px auto;
-    width: 70%;
-    border-radius: 35px;
+    width: 100%;
+    /* border-radius: 35px; */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    
+    color: black;
+    background-color: white;
+    height: 500px;
+    text-align: center;
 }
 .p1 {
     width: 40%;
@@ -42,7 +44,7 @@ body {
 
 .p1 h1, .p1 p {
     margin: auto;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 .p2 {
@@ -93,7 +95,8 @@ body {
 .scale-on-hover {
     display: inline-block;
     transition: transform 0.7s ease;
-    color: rgb(81, 215, 233);
+    /* color: rgb(81, 215, 233); */
+    color: red;
 }
 
 .scale-on-hover:hover {
@@ -103,7 +106,8 @@ body {
 .scale-on-hover-again {
     display: inline-block;
     transition: transform 0.1s ease;
-    color: rgb(81, 215, 233);
+    /* color: rgb(81, 215, 233); */
+    color: red;
 }
 
 .scale-on-hover-again:hover {
@@ -336,9 +340,11 @@ body {
       }
        .profile{
         display: flex;
-        flex-wrap: wrap-reverse;
+        /* flex-wrap: wrap-reverse; */
+        width: 100%;
+        height: 500px;
        }
-       .profile .p2{
+       .profile .p2,.home{
         width: 100%;
        }
        /* .profile img{
@@ -360,15 +366,16 @@ body {
       }
       .profile {
         margin: 20px auto;
-        width: 70%;
-        border-radius: 35px;
+        /* width: 70%; */
+        /* border-radius: 35px; */
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
+        /* color: white; */
     }
     .p1 {
         width: 100%;
+        text-align: center;
     }
     
     .p1 h1, .p1 p {
