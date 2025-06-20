@@ -121,6 +121,8 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item">
+        <a class="nav-link" href="https://aytid.github.io/servicenow/" target="_blank">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
@@ -424,18 +426,23 @@
   });
 
 
-    // Smooth Scroll
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
 
-        // Collapse menu on small screen
-        if (window.innerWidth < 768) {
-          document.getElementById('navbarNav').classList.remove('show');
-        }
-      });
-    });
+    // If it's an external link, don't interfere
+    if (href.startsWith('http') || href.startsWith('mailto')) return;
+
+    // Otherwise, apply smooth scroll
+    e.preventDefault();
+    document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+
+    if (window.innerWidth < 768) {
+      document.getElementById('navbarNav').classList.remove('show');
+    }
+  });
+});
+
   </script>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
