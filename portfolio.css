@@ -12,6 +12,10 @@ body {
   color: white !important;
 }
 
+section {
+  scroll-margin-top: 200px;
+}
+
 .profile {
   position: relative;
   min-height: 100vh;
@@ -95,11 +99,16 @@ body {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   text-align: center;
-  max-width: 320px;
-  min-width: 320px;
-  margin: 0 auto;
+  width: 320px;
   padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  /* height: 370px; */
 }
+
 
 .certification-card:hover {
   transform: scale(1.05);
@@ -108,9 +117,16 @@ body {
 
 .certification-card img {
   border-radius: 10px;
-  max-height: 160px;
-  object-fit: contain;
   width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.certification-card p {
+  font-size: 1rem;
+  margin-top: 20px;
+  color: #000;
+  line-height: 1.4;
 }
 
 .carousel-control-prev-icon,
@@ -122,8 +138,10 @@ body {
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
+  top: 40%;
 }
 
+/* Project Card */
 .project-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -133,45 +151,7 @@ body {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
-  .profile-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .p1 h1 {
-    font-size: 2.2rem;
-  }
-
-  .p1 p {
-    font-size: 1rem;
-  }
-
-  .p2 img {
-    max-height: 300px;
-    width: auto;
-  }
-
-  .row.profile-content {
-    flex-direction: column-reverse;
-  }
-
-  .certification-card {
-    margin-bottom: 16px;
-    max-width: 90%;
-    min-width: auto;
-  }
-}
-
-
-
-
-
-
-
-
-
-
+/* Timeline */
 .timeline-box {
   background-color: #fff;
   border-radius: 12px;
@@ -210,10 +190,9 @@ body {
 
 .timeline-circle.filled {
   background-color: #dcfce7;
-  color: #166534; 
+  color: #166534;
   border: none;
 }
-
 
 .timeline-line {
   position: absolute;
@@ -253,6 +232,40 @@ body {
 }
 
 /* Responsive Tweaks */
+@media (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .p1 h1 {
+    font-size: 2.2rem;
+  }
+
+  .p1 p {
+    font-size: 1rem;
+  }
+
+  .p2 img {
+    max-height: 300px;
+    width: auto;
+  }
+
+  .row.profile-content {
+    flex-direction: column-reverse;
+  }
+
+  .certification-card {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .certification-card img {
+    height: 180px;
+  }
+}
+
 @media (max-width: 576px) {
   .timeline-box {
     padding: 20px 16px;
@@ -273,4 +286,70 @@ body {
     bottom: -24px;
   }
 }
+/* Contact Form Styling */
+.section {
+  background-color: #fff;
+  padding: 60px 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 60px auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
 
+.section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.fun-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fun-form label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.fun-form input,
+.fun-form textarea {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fun-form input:focus,
+.fun-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.fun-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fun-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
