@@ -162,3 +162,106 @@ body {
     min-width: auto;
   }
 }
+
+.timeline-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-step {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.timeline-step:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #64748b;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: #fff;
+  z-index: 2;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.timeline-circle.filled {
+  background-color: #dcfce7;
+  color: #166534; 
+  border: none;
+}
+
+
+.timeline-line {
+  position: absolute;
+  top: 40px;
+  left: 19px;
+  bottom: -32px;
+  width: 2px;
+  background-color: #e2e8f0;
+  z-index: 1;
+}
+
+.timeline-step:last-child .timeline-line {
+  display: none;
+}
+
+.timeline-content {
+  flex: 1;
+  padding-top: 4px;
+}
+
+.timeline-status {
+  font-size: 13px;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin-top: 6px;
+}
+
+.timeline-status.completed {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.timeline-status.pending {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 576px) {
+  .timeline-box {
+    padding: 20px 16px;
+  }
+
+  .timeline-step {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .timeline-content {
+    padding-left: 0;
+  }
+
+  .timeline-line {
+    left: 19px;
+    top: 40px;
+    bottom: -24px;
+  }
+}
+
